@@ -1,0 +1,74 @@
+   
+   <%- include('../templates/head'); %> 
+        <h1 class="titulo">Formulario de Ingregos</h1>
+        <hr>
+        <div class="container d-flex justify-content-center">
+
+            <div class="card col-7 ">
+                <div class="card-header text-center">INGRESO</div>
+                <div class="card-body m-2 d-flex">
+
+                    <form action="/listado_ingreso" class="row g-3 d-flex justify-content-center" id="miForm" autocomplete='off'>
+                        
+                        <div class="mb-3 row">
+                            <label for="inputFecha" class="col-sm-2 col-form-label">Fecha</label>
+                            <div class="col-sm-11">
+                                <input class="form-control inputFecha input" name="fecha" id="fecha"
+                                    placeholder=" Seleccione Fecha" type="date" />
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+
+                            <label for="inputConceto" class="col-sm-2 col-form-label">Cuenta</label>
+                            <div class="col-sm-11">
+
+                                <select name="lista_income"  id="lista_income" class="form-select form-select-md col-sm-2 input"
+                                    aria-label=".form-select-md example">
+                                <option selected>Seleccionar una cuenta</option> &#128317;
+                                    
+                                                   
+                                </select>
+
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="inputMonto" class="col-sm-2 col-form-label">Monto</label>
+                            <div class="col-sm-11">
+                                <input type="number" required name="monto" value="0" class="form-control input" id="inputMonto"
+                                    placeholder="Introduca el Monto">
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+
+                            <div class="col-sm-10">
+                                <label for="texarea" class="col-sm-2 col-form-label">Notas</label>
+                                <textarea name="nota" id="nota" class="form-control textarea" name="texArea" id="texarea" 
+                                    placeholder="Notas:" resize='none'>
+                                
+                                </textarea>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary mb-3 btnguardar">
+                                Guardar </button>
+                        
+                        </div>
+
+                               <p class="text-center " id="errormessage"></p>            
+                      
+                    </form>
+                  
+                
+
+                </div>
+            </div>
+        </div>
+     
+
+        <%- include('../templates/footer'); %> 
+

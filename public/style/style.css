@@ -1,0 +1,150 @@
+  @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css');
+
+:root{
+     --color-white: #FBFBFF;
+     --color-blue: #22577A;
+     --color-green-blue: #0582CA;
+     --colblueor: #0c9def;
+      --color-black: #000;
+
+}
+*{
+
+    margin: 0;
+    padding: 0;
+    font-family: “Helvetica”, arial, sans-serif;
+}
+
+body{ 
+    background-color:  var(--colblueor);
+   
+    margin: 0;
+    padding: 0;
+}
+.home{
+ background-image: url('/img/background.png');
+
+}
+
+.logo{
+
+    width: 55px;
+}
+.titulo{
+    text-align: center;
+    color: white;
+}
+hr{
+    border: 2px solid black;
+    box-shadow: -1px 0px 0px 1px rgba(0, 0, 255, 0.);
+}
+  .tituloinicio{
+    background-color: rgba(0, 0, 255, 0.5);
+    width: 350px;
+    margin: auto;
+    font-weight: 700;
+   
+  }
+.card{
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: var(--color-white);
+    box-sizing: border-box;
+}
+.input{
+
+   border: none;
+   background: transparent;
+   border-top: 2px solid #48e;
+   color: #fff;
+   transition: background 1.3s;
+ 
+}
+
+.input::placeholder{
+    color: #fff;
+    transition: color 0.3s;
+ }
+ .input:hover{
+    background: #26a;
+  
+}
+.input:focus{
+    color: #fff;
+    background: #26a;
+  }
+ 
+.input:hover::placeholder{
+    color: #fff;
+}
+
+
+input[type="submit"]{
+  border: 50px solid red;
+}
+.nav-link{
+     transition: background 1s ease;
+  }
+
+  .nav-link:hover{
+    background-color: #26a;
+    transition: color 0.5s;
+    border-bottom: 3px solid var(--color-white);
+    font-size: 1.2rem;   
+  }
+    
+    .btnguardar{
+      width: 150px;
+     ;
+      border-radius: 50px;
+        transition: background 1.3s;
+        
+    }
+   .btnguardar:hover{
+      
+     background-color: #26a;
+     transition: color 0.3s;
+     box-shadow: -1px 2px 6px 5px #26a;
+     border-bottom: 3px solid var(--color-white);
+    
+   }
+   .icon-down::after {
+    content: "\25BC";
+    
+}
+.textarea {
+    resize: none;
+    box-shadow: -1px 2px 5px 5px #26a;
+}
+label{
+
+   font-weight: 800;
+}
+.card-header{
+   font-weight: 800;
+}
+span{
+margin-top: -5px;
+
+}
+.textbuscar{
+   box-shadow: -1px 2px 8px 5px #26a;
+}
+.textbuscar:hover{
+    border-bottom: 3px solid var(--color-white);
+
+}
+.error{
+
+ color: hotpink;
+ background-color: #000;
+  width: 300px;
+
+}
+.sucess{
+
+ color: green;
+  background-color: #000;
+   width: 300px;
+
+}

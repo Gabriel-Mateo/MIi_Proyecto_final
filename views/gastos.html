@@ -1,0 +1,68 @@
+
+    <%- include('../templates/head'); %>
+        <h1 class="titulo">Formulario de Gasto</h1>
+        <hr>
+
+        <div class="container d-flex justify-content-center">
+
+            <div class="card col-7 ">
+                <div class="card-header text-center">GASTO </div>
+                <div class="card-body m-2 d-flex">
+
+                    <form action="listado_gastos" id="formautcome" class="row g-3 d-flex justify-content-center" autocomplete="off">
+
+
+                        <div class="mb-3 row">
+                            <label for="inputFecha" class="col-sm-2 col-form-label">Fecha</label>
+                            <div class="col-sm-11">
+                                <input class="form-control inputFecha input" id="inputFecha" name="fechaoutcome"
+                                    placeholder=" Seleccione Fecha" type="date" />
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+
+                            <label for="inputConcepto" class="col-sm-2 col-form-label">Cuenta</label>
+                            <div class="col-sm-11">
+                                <select class="form-select form-select-md col-sm-2 input" name="listacuentaout" id='lista_outcome'
+                                    aria-label=".form-select-md example" >
+                                  <option selected>Seleccionar una cuenta </option>&#128317;
+                               
+                                
+                            </div>
+                        </div>
+
+                        <div class="mb-3 row">
+                            <label for="inputMonto" class="col-sm-2 col-form-label">Monto</label>
+                               <div class="col-sm-11">
+                                <input type="number" required class="form-control input" id="inputMonto" name="montoOutcome" 
+                                    placeholder="Introduca el Monto">
+                            </div>
+                        </div>
+          
+                          
+
+                        <div class="mb-3 row">
+                            <div class="col-sm-10">
+                                <label for="texarea" class="col-sm-2 col-form-label">Nota</label>
+                                <textarea class="form-control textarea" name="notaoutcome" id="texArea" rows="2" cols="40" 
+                                    placeholder="Agregar nota: " resize='none'> Nota:
+                                        
+                                        </textarea>
+
+                            </div>
+                        </div>
+
+                        <div>
+                            <button type="submit" class="btn btn-primary mb-3 btnguardar">Guardar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+ <%- include('../templates/footer'); %>
+   
+

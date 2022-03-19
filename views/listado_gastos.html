@@ -1,0 +1,47 @@
+<%- include('../templates/head'); %>
+
+    <h1 class="titulo">Listado de Gastos </h1>
+    <hr>
+
+    <div class="container d-flex mb-2 justify-content-between">
+
+        <div>
+            <a class="btn btn-primary btn-sm btnguardar" href="gastos" 
+               title="Crear nuevo cliente">Add new outcome </a>
+        </div>
+
+           <div class="textbuscar input">
+            &#128270;<input id="textarea" class="input" type="text" placeholder="Bucar por Concepto" size="20" maxlength="20">
+        </div>
+    </div>
+  
+    <div class="container">
+
+        <table id="tablegastos" class="table table-dark table-hover">
+            <thead>
+                <tr>
+
+                    <th scope="col">Fecha</th>
+                    <th scope="col">Concepto</th>
+                    <th scope="col">Monto</th>
+                    <th scope="col">Nota</th>
+
+                </tr>
+            </thead>
+            <tbody class="container" id='listagasto'>
+
+                <!--
+           <td>
+            <a class="btn btn-primary" href="#" role="button">Nuevo</a>
+            </td>
+          -->
+
+
+            </tbody>
+        </table>
+
+        <p id="parrafo"></p>
+
+    </div>
+
+    <%- include('../templates/footer')%>
